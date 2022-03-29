@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: Helvetica;
+    src: url("../fonts/HelveticaCE.otf");
+}
+body {
+    font-family: Helvetica;
+    overflow-x: hidden;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+.sidebar {
+    width: 16.1vw;
+    height: 56.2vw;
+    background: #101010;
+    position: fixed;
+}
+.sidebar-brand {
+    padding: 1.3vw 0 4.4vw 1.8vw;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.5vw;
+    line-height: 1.7vw;
+}
+ul li {
+    padding: 1vw 0 1vw 1.8vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+ul li.hover:hover {
+    background: #666666;
+}
+.bgcolor {
+    background: #4e13cd;
+}
+ul li a {
+    color: #f0f0f0;
+    font-weight: 400;
+    font-size: 1.14vw;
+    line-height: 150%;
+    margin-left: 0.9vw;
+}
+.icon {
+    text-align: center;
+    color: #f0f0f0;
+    width: 1.25vw;
+    height: 1.25vw;
+}
+.wrapper {
+    width: calc(100vw - 16.1vw);
+    position: absolute;
+    left: 16.1vw;
+}
+.header-section {
+    padding: 1.6vw 5.2vw;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0.2vw 0.2vw 0 #f0f0f0;
+}
+
+.block1 a {
+    color: #101010;
+    font-size: 0.9vw;
+    line-height: 120%;
+    font-weight: 400;
+}
+.block1 a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.block2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.block2 img {
+    width: 1.8vw;
+    height: 1.8vw;
+}
+.block2 span {
+    margin-left: 1.5vw;
+    color: #101010;
+    font-weight: 400;
+    font-size: 0.9vw;
+    line-height: 120%;
+}
+.block2 span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.main-section {
+    padding-left: 5.2vw;
+    padding-top: 2.6vw;
+}
+
+.main-section h1 {
+    font-weight: 400;
+    font-size: 3vw;
+    line-height: 120%;
+    margin-bottom: 2.6vw;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+.first-block {
+    display: flex;
+}
+.priceValue {
+    color: #4e13cd;
+    font-weight: 400;
+    font-size: 3vw;
+    line-height: 120%;
+}
+.text1 {
+    color: #bfbfbf;
+    margin-left: 1.3vw;
+    margin-top: 1.6vw;
+    font-size: 1.14vw;
+    line-height: 150%;
+    font-weight: 400;
+}
+
+.second-block {
+    background-color: #ffffff;
+    width: 15.9vw;
+    height: 2.9vw;
+    margin-right: 5.2vw;
+    padding: 0.8vw 1.5vw 0.8vw 1.7vw;
+    border-radius: 0.36vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text2 {
+    color: #666666;
+    font-weight: 400;
+    font-size: 0.9vw;
+    line-height: 120%;
+}
+
+.second-block:hover {
+    background: #4e13cd;
+    border-radius: 0.36vw;
+    cursor: default;
+}
+.second-block:hover .text2 {
+    color: #ffffff;
+}
+.img {
+    width: 0.78vw;
+    height: 0.78vw;
+    margin-right: 0.7vw;
+    background-image: url("../img/dashboardIcons/Group\ 1.svg");
+    background-size: cover;
+}
+.second-block:hover .img {
+    width: 0.78vw;
+    height: 0.78vw;
+    margin-right: 0.7vw;
+    background-image: url("../img/dashboardIcons/Download.svg");
+    background-size: cover;
+}
+.main-div {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 5.2vw;
+    margin-top: 5.2vw;
+}
+
+.firstBlock,
+.secondBlock {
+    border-radius: 0.36vw;
+    width: 35.1vw;
+    height: 7vw;
+    padding: 1.5vw 1.5vw 1.5vw 1.5vw;
+    cursor: pointer;
+}
+.txt1 {
+    color: #4e13cd;
+    font-size: 1.8vw;
+    line-height: 120%;
+    font-weight: 400;
+}
+.txt2 {
+    color: #101010;
+    font-size: 1.8vw;
+    line-height: 120%;
+    font-weight: 400;
+}
+.txt3 {
+    color: #bfbfbf;
+    font-size: 0.9vw;
+    line-height: 120%;
+    font-weight: 400;
+    margin-top: 0.5vw;
+}
+.firstBlock:hover,
+.secondBlock:hover {
+    border-radius: 0.36vw;
+    border: 0.05vw solid #4e13cd;
+}
+.firstBlock.active {
+    background: #4e13cd;
+}
+.firstBlock.active .txt1 {
+    color: #ffffff;
+    font-size: 1.8vw;
+    line-height: 120%;
+    font-weight: 400;
+}
+.firstBlock.active .txt2 {
+    color: #ffffff;
+    font-size: 1.8vw;
+    line-height: 120%;
+    font-weight: 400;
+}
+.secondBlock.active {
+    background: #4e13cd;
+    color: #f0f0f0;
+}
+.secondBlock.active .txt1 {
+    color: #ffffff;
+    font-size: 1.8vw;
+    line-height: 120%;
+    font-weight: 400;
+}
+.secondBlock.active .txt2 {
+    color: #ffffff;
+    font-size: 1.8vw;
+    line-height: 120%;
+    font-weight: 400;
+}
+.firstBlock div,
+.secondBlock div {
+    display: flex;
+    justify-content: space-between;
+}
+

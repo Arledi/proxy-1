@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Helvetica";
+    src: url("./fonts/HelveticaCE.otf");
+}
+
+body {
+    font-family: Helvetica;
+    overflow-x: hidden;
+}
+#ProxyUPMainTitle {
+    cursor: default;
+}
+header {
+    color: #ffffff;
+    margin: 0 5.2vw;
+    padding-top: 1.3vw;
+    display: flex;
+    justify-content: space-between;
+}
+header ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+header ul li a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 0.9vw;
+    line-height: 120%;
+    color: #f0f0f0;
+}
+header ul li {
+    margin-right: 5.2vw;
+}
+header ul a:hover {
+    text-decoration: underline;
+}
+header p {
+    font-size: 1.5vw;
+    font-weight: 700;
+    line-height: 1.7vw;
+}
+.section1 {
+    width: 100vw;
+    background: radial-gradient(50% 50% at 50% 50%, #4e13cd 0%, #101010 100%);
+}
+.menu-links {
+    display: flex;
+    height: 1.7vw;
+}
+.btn {
+    text-transform: capitalize;
+    border: none;
+    border-radius: 0.3vw;
+    background: #4e13cd;
+    color: #f0f0f0;
+    font-size: 0.9vw;
+    line-height: 120%;
+    width: 5vw;
+    height: 1.7vw;
+}
+.btn:hover {
+    background: #4903bd;
+}
+
+.titleTop {
+    color: #ffffff;
+    font-size: 3vw;
+    font-weight: 400;
+    line-height: 120%;
+    margin-left: 15.6vw;
+    margin-top: 10.8vw;
+}
+.section2 {
+    width: 100vw;
+    padding: 5.2vw 0 10.4vw 15.6vw;
+}
+.block1,
+.block2,
+.block3 {
+    background: #ffffff;
+    width: 68.75vw;
+    padding: 2.6vw 0 2.5vw 1.5vw;
+    border-radius: 0.36vw;
+    margin-top: 2.6vw;
+}
+.question-headerPiece {
+    margin-bottom: 2.6vw;
+    color: #4e13cd;
+    font-weight: 400;
+    font-size: 1.8vw;
+    line-height: 120%;
+}
+.question-title {
+    padding: 1vw 0 1vw 1.5vw;
+    width: 65.6vw;
+    display: flex;
+    justify-content: space-between;
+}
+.question-title p {
+    color: #101010;
+    font-weight: 400;
+    font-size: 1.14vw;
+    line-height: 150%;
+}
+button {
+    border: transparent;
+    background: transparent;
+}
+button img {
+    width: 1.25vw;
+    height: 1.25vw;
+}
+.question:hover .minus-icon {
+    display: block;
+}
+.question:hover .plus-icon {
+    display: none;
+}
+
+.question-text {
+    display: none;
+    margin-left: 1.5vw;
+    margin-top: 2.6vw;
+    margin-bottom: 2.6vw;
+    width: 58.6vw;
+    color: #666666;
+    font-weight: 400;
+    font-size: 0.9vw;
+    line-height: 150%;
+}
+
+.question:hover .question-text {
+    display: block;
+}
+.wiki {
+    color: #4e13cd;
+}
+
+.minus-icon {
+    display: none;
+}
+footer {
+    width: 100vw;
+    background: #101010;
+    height: 26vw;
+    padding-left: 5vw;
+    color: #f0f0f0;
+    position: relative;
+}
+.footer-top {
+    display: flex;
+    padding-top: 7vw;
+}
+.footer-top div {
+    margin-right: 15vw;
+}
+footer ul {
+    list-style: none;
+    margin-top: 1.3vw;
+    font-size: 1.14vw;
+    color: #f0f0f0;
+}
+footer ul li {
+    margin-bottom: 0.52vw;
+}
+footer ul li a {
+    text-decoration: none;
+    color: #f0f0f0;
+    font-size: 1.14vw;
+    line-height: 150%;
+    font-weight: 400;
+    cursor: default;
+}
+footer .menu li:hover {
+    text-decoration: underline;
+    cursor: default;
+}
+footer .Other li:hover {
+    text-decoration: underline;
+    cursor: default;
+}
+footer h3 {
+    color: #666666;
+    font-size: 1.14vw;
+    font-weight: 400;
+    line-height: 150%;
+}
+footer p {
+    color: #666666;
+    position: absolute;
+    bottom: 1.3vw;
+    font-weight: 400;
+    font-size: 0.729vw;
+    line-height: 150%;
+}
