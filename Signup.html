@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./styles/Signup.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+        
+    </head>
+    <body>
+        <section>
+
+            <header>
+                <p id="ProxyUPMainTitle" >ProxyUP</p>
+                <div class="menu-links">
+                    <ul class="links">
+                        <li><a href="">Home</a></li>
+                         <!-- <li><a href="">Dashboard</a></li> -->
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Blog</a></li>
+                       
+                    </ul>
+                    <button class="btn">log in</button>
+                </div>
+            </header>
+
+            <div class="signUp">
+                <h1>Sign up</h1>
+                <form>
+                    <div class="container">
+                    <input type="text" required />
+                    <label for="">Username</label>
+                    </div>
+                    <div class="container">
+                    <input type="email" required />
+                    <label for="">Email</label>
+                    </div>
+                    <div class="container">
+                    <input type="password"  id="password" required />
+                    <div id="passwordToggle">
+                        <img
+                            class="eye-off"
+                            src="./img/eye-off.svg"
+                            alt=""
+                            srcset=""
+                        /><img
+                            class="eye"
+                            src="./img/eye.svg"
+                            alt=""
+                            srcset=""
+                        />
+                    </div>
+                    <label for="">Password</label>
+                    </div>
+                    <button  type="submit">Submit</button><br/>
+                    <span>Already have an account?<a href="http:Login.html">Log in</a></span>
+                </form>
+            </div>
+
+        </section>
+
+        <footer>
+            <div class="footer-top">
+                <div>
+                    <h3>Sales</h3>
+                    <ul>
+                        <li>sales@proxyup.io</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Support</h3>
+                    <ul>
+                        <li>help@proxyup.io</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Nav</h3>
+                    <ul class="menu">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Other</h3>
+                    <ul class="Other">
+                        <li><a href="">Terms</a></li>
+                        <li><a href="">Privacy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="year"></p>
+        </footer>
+
+        <script src="./script/login.js"></script>
+    </body>
+</html>

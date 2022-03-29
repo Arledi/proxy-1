@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./styles/Download.css" />
+    </head>
+    <body>
+        <section class="sidebar">
+            <div class="sidebar-brand">
+                <h1>ProxyUP</h1>
+            </div>
+            <div class="sidebar-menu">
+                <ul class="DashboardMenuLinks">
+                    <li class="hover">
+                        <img
+                            class="icon"
+                            src="./img/dashboardIcons//Dashboard.svg"
+                            alt=""
+                        /><a href="http:Dashboard.html"> Dashboard</a>
+                    </li>
+                    <li class="hover">
+                        <img
+                            class="icon"
+                            src="./img/dashboardIcons//User.svg"
+                            alt=""
+                        /><a href="http:Account.html">Account</a>
+                    </li>
+                    <li class="hover">
+                        <img
+                            class="icon"
+                            src="./img/dashboardIcons//Referrals.svg"
+                            alt=""
+                        /><a href="http:Referrals.html">Referrals</a>
+                    </li>
+                    <li class="hover">
+                        <img
+                            class="icon"
+                            src="./img/dashboardIcons//Card.svg"
+                            alt=""
+                        /><a href="http:Deposit.html">Deposit</a>
+                    </li>
+                    <li>
+                        <img
+                            class="icon"
+                            src="./img/dashboardIcons//Download.svg"
+                            alt=""
+                        /><a href="http:Download.html">Download</a>
+                    </li>
+                    <li class="hover">
+                        <img
+                            class="icon"
+                            src="./img/dashboardIcons//Network.svg"
+                            alt=""
+                        /><a href="http:Network.html">Network access</a>
+                    </li>
+                    <li class="hover">
+                        <img
+                            class="icon"
+                            src="./img/dashboardIcons//Reseller API.svg"
+                            alt=""
+                        /><a href="http:Reseller.html">Reseller API</a>
+                    </li>
+                    <!-- <li class="hover">
+                        <img
+                            class="icon"
+                            src="./img/dashboardIcons//Support.svg"
+                            alt=""
+                        />
+                        <a href="http:Support.html">Support</a>
+                    </li> -->
+                    <li class="hover">
+                        <img
+                            class="icon"
+                            src="./img/dashboardIcons//Log-out.svg"
+                            alt=""
+                        /><a href="">Log out</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="wrapper">
+            <section class="header-section">
+                <div class="block1">
+                    <a href="">Home</a>
+                </div>
+
+                <div class="block2">
+                    <img src="./img/dashboardIcons/user@2x.svg" alt="" />
+                    <span>daniel2022</span>
+                </div>
+            </section>
+            <section class="main-section">
+                <h1 class="deposit">Download</h1>
+                <p class="text1">Download the ProxyUP app and start earning credits</p>
+                <div class="osBtns">
+                    <div class="os">
+                        <span>Download for MacOS</span><br/>
+                        <img src="./img/Deposit-cards/Rectangle 40.svg" alt="">
+
+                    </div>
+                    <div class="os">
+                        <span>Download for Windows</span><br/>
+                        <img src="./img/Deposit-cards/windows.svg" alt="">
+
+                    </div>
+                    <div class="os">
+                        <span>Download for Linux</span><br/>
+                        <img src="./img/Deposit-cards/linux.svg" alt="">
+                    </div>
+                </div>
+                <p class="text1">or run the following command to install (requires Docker):</p>
+                <div class="commandDiv">
+                    <button>Copy </button><img class="copy" src="./img/Deposit-cards/copy.svg" alt="">
+                    <p># This command includes configuration parameters to log-in to your account when the docker container starts, and will auto-update when a new client version is pushed.
+                        # If you modify the install command PacketStream may not function properly.<br/><br/>
+                        
+                        sudo docker stop watchtower; sudo docker rm watchtower; sudo docker rmi containrrr/watchtower; sudo docker stop psclient; sudo docker rm psclient; sudo docker rmi packetstream/psclient; sudo docker run -d --restart=always -e CID=38aA --name psclient packetstream/psclient:latest && sudo docker run -d --restart=always --name watchtower -v /var/run/docker.sock:/var/run/docker.sock containrrr/watchtower --cleanup --include-stopped --revive-stopped --interval 60 psclient
+                    </p>
+                </div>
+            </section>
+        </section>
+    </body>
+</html>
